@@ -8,4 +8,4 @@ ENV DNS2=127.0.0.1#5335
 COPY start-wrapper.sh .
 
 RUN chmod +x start-wrapper.sh
-ENTRYPOINT ["start-wrapper.sh"]
+ENTRYPOINT ["./start-wrapper.sh"]
