@@ -16,5 +16,8 @@ steps:
       - "gcr.io/$PROJECT_ID/pihole-unbound:latest"
       - "--push"
       - .
+options:
+  env:
+    - DOCKER_CLI_EXPERIMENTAL=enabled
 substitutions:
   _DOCKER_BUILDX_PLATFORMS: "linux/amd64,linux/arm64"
